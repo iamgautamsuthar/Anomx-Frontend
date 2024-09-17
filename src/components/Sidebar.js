@@ -10,7 +10,7 @@ const Sidebar = () => {
             <div
                 className={`transform transition-transform ${
                     isOpen ? 'translate-x-0' : '-translate-x-80'
-                }  lg:visible  duration-700 lg:translate-x-0 ease-in-out lg:w-[14%] border-r-[0.5px] border-zinc-700 text-white h-full lg:flex flex-col lg:mt-0 mt-12 p-5`}
+                } lg:visible duration-700 lg:fixed bg-background absolute lg:translate-x-0 ease-in-out lg:w-[14%] border-r-[0.5px] border-zinc-700 text-white h-full lg:flex flex-col lg:mt-12 mt-7 p-5`}
             >
                 <p className='lg:hidden text-2xl text-white bg-background w-full'>
                     Anomx

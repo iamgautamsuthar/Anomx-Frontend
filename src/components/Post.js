@@ -1,7 +1,7 @@
 const Post = () => {
     return (
         <>
-            <div className='h-fit w-[70%]  px-7 py-5 border-[1px] border-zinc-700 rounded-lg'>
+            <div className='h-fit lg:w-[60%] w-[90%] px-7 py-5 border-[1px] border-zinc-700 rounded-lg'>
                 <div className='flex justify-between border-b-[0.5px] pb-3 border-zinc-700'>
                     <div className=' flex gap-2'>
                         <div className='rounded-full w-12 h-12 bg-slate-600'></div>
