@@ -1,10 +1,21 @@
+'use client';
+
 import SideButton from './sidebar/SideButton';
+import useSidebarStore from '@/store/sidebarStore';
 
 const Sidebar = () => {
+    const { isOpen } = useSidebarStore();
     return (
         <>
-            <div className='w-[14%] border-r-[0.5px] border-zinc-700 text-white h-full flex flex-col  p-5'>
-                <div className=' border-b-[0.5px] border-zinc-700 h-fit pb-3 gap-2 flex flex-col'>
+            <div
+                className={`transform transition-transform ${
+                    isOpen ? 'translate-x-0' : '-translate-x-80'
+                }  lg:visible  duration-700 lg:translate-x-0 ease-in-out lg:w-[14%] border-r-[0.5px] border-zinc-700 text-white h-full lg:flex flex-col lg:mt-0 mt-12 p-5`}
+            >
+                <p className='lg:hidden text-2xl text-white bg-background w-full'>
+                    Anomx
+                </p>
+                <div className='border-b-[0.5px] border-zinc-700 h-fit pb-3 gap-2 flex flex-col'>
                     <SideButton />
                     <SideButton />
                     <SideButton />

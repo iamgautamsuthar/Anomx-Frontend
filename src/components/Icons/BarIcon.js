@@ -1,6 +1,12 @@
+import useSidebarStore from '@/store/sidebarStore';
 const BarIcon = () => {
+    const { toggleSidebar } = useSidebarStore();
+
     return (
-        <button className='hover:bg-slate-700 rounded-full p-2 transition-all duration-400 ease-in-out'>
+        <button
+            className='hover:bg-slate-700 rounded-full p-2 transition-all duration-400 ease-in-out z-50'
+            onClick={toggleSidebar}
+        >
             <svg
                 width={25}
                 viewBox='0 0 24 24'

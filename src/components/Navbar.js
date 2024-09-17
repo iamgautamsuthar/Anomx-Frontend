@@ -10,7 +10,7 @@ const {
 const Navbar = () => {
     return (
         <>
-            <div className='w-screen lg:h-[6.3%] border-b-[0.5px] border-zinc-700 text-white flex lg:justify-center justify-between items-center'>
+            <div className='lg:static z-50 bg-background fixed w-screen lg:h-[6.3%] border-b-[0.5px] border-zinc-700 text-white flex lg:justify-center justify-between items-center'>
                 <div className='lg:hidden pl-1'>
                     <BarIcon />
                 </div>
