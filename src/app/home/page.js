@@ -1,9 +1,13 @@
 'use client';
 
+import Post from '@/components/Post';
+
 const Home = () => {
     return (
         <>
-            <h1 className='text-white'>Home of Anomx</h1>
+            <div className='h-full w-full px-96 py-5 text-white'>
+                <Post />
+            </div>
         </>
     );
 };

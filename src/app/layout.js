@@ -1,3 +1,4 @@
+import Sidebar from '@/components/Sidebar';
 import './globals.css';
 
 import Navbar from '@/components/Navbar';
@@ -9,9 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang='en'>
-            <body className='bg-background w-screen h-screen'>
+            <body className='bg-background w-screen h-screen flex flex-col'>
                 <Navbar />
-                {children}
+                <div className='flex h-full w-full'>
+                    <Sidebar />
+                    {children}
+                </div>
             </body>
         </html>
     );
